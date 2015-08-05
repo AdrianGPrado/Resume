@@ -14,9 +14,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATION
+%-------------------------------------------------------------------------------
 
 \documentclass{scrartcl}
 
@@ -48,27 +48,33 @@
 \newcommand{\phoneMobileLine}{(M) +1 (832) 863 1029}
 
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \begin{document}
 
 \thispagestyle{empty} % Stop the page count at the bottom of the first page
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
-\begin{cv}{\spacedallcaps{\fullName}}\vspace{1.5em} % Your name
+% Your name
+\begin{cv}{\spacedallcaps{\fullName}}\vspace{1.5em} 
 
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+% Personal information heading
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} 
 
-\NewEntry{}{\textit{Born in \birthPlace,}}{\birthDate} % Birthplace and date
+% Birthplace and date
+\NewEntry{}{\textit{Born in \birthPlace,}}{\birthDate} 
 
-\NewEntry{email}{\href{mailto:\emailAddress}{\emailAddress}} % Email address
+% Email address
+\NewEntry{email}{\href{mailto:\emailAddress}{\emailAddress}} 
 
-\NewEntry{website}{\href{\webSite}{\webSite}} % Personal website
+% Personal website
+\NewEntry{Linkedin}{\href{\webSite}{\webSite}} 
 
-\NewEntry{phone}{\phoneMobileLine} % Phone number(s)
+% Phone number(s)
+\NewEntry{phone}{\phoneMobileLine} 
 
 \input{resume_goal}
 \input{work_experience}
