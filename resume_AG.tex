@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Classicthesis-Styled CV
 % LaTeX Template
 % Version 1.0 (22/2/13)
@@ -39,6 +39,8 @@
 \hangindent=2em
 \hangafter=0
 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 }
+
+\newcommand{\EndCVSection}{\vspace{1em}}
 
 
 \newcommand{\NewEntry}[3]{
@@ -103,8 +105,10 @@
 % \NewEntry{}{\textit{Born in \birthPlace,}}{\birthDate} 
 % Email address
 \PersonalEntry{email}{\href{mailto:\emailAddress}{\emailAddress}} 
+
 % Personal LinkedinWeb
 \PersonalEntry{Linkedin}{\href{\LinkedinWeb}{\LinkedinWeb}} 
+
 % Phone number(s)
 \PersonalEntry{phone}{\phoneMobileLine} 
 
