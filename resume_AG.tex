@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Classicthesis-Styled CV
 % LaTeX Template
 % Version 1.0 (22/2/13)
@@ -34,8 +34,6 @@
 
 \newlength{\datebox}\settowidth{\datebox}{2011 -- 2001} % Set the width of the date box in each block
 
-
-
 \newcommand{\PersonalEntry}[3]{
 \noindent
 \hangindent=2em
@@ -61,13 +59,15 @@
 \vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
 
-\newcommand{\SubDescription}[1]{
-
+\newcommand{\PartDescription}[1]{
+% \vspace{-0.5em}
 \hangindent=2em
 \hangafter=0
 \noindent
 \raggedright
-\footnotesize{#1}\par\normalsize}
+\footnotesize{#1}
+\par
+\normalsize}
 
 \newcommand{\fullName}{Adri\'an Garc\'ia Prado}
 \newcommand{\birthPlace}{Spain}
@@ -97,28 +97,22 @@
 \begin{cv}{\spacedallcaps{\fullName}}\vspace{1.5em} 
 
 % Personal information heading
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} 
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.3em} 
 
 % Birthplace and date
-
 % \NewEntry{}{\textit{Born in \birthPlace,}}{\birthDate} 
 % Email address
-
 \PersonalEntry{email}{\href{mailto:\emailAddress}{\emailAddress}} 
 % Personal LinkedinWeb
-
 \PersonalEntry{Linkedin}{\href{\LinkedinWeb}{\LinkedinWeb}} 
 % Phone number(s)
-
 \PersonalEntry{phone}{\phoneMobileLine} 
-
 
 \input{resume_goal}
 \input{work_experience}
 \input{education}
 \input{computer_skills}
 \input{other_information}
-
 \end{cv}
 
 \end{document}
