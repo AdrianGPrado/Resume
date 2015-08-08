@@ -42,8 +42,10 @@
 
 \newcommand{\EndCVSection}{\vspace{1em}}
 
+\newcommand{\EntryTitle}[1]{\noindent\spacedlowsmallcaps{#1}\vspace{0.5em}}
 
 \newcommand{\NewEntry}[3]{
+\vspace{0.5em}
 \noindent
 \hangindent=2em
 \hangafter=0 
@@ -58,18 +60,18 @@
 \footnotesize{#1}
 \par
 \normalsize
-\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+\vspace{0.6em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
 
 \newcommand{\PartDescription}[1]{
-% \vspace{-0.5em}
 \hangindent=2em
 \hangafter=0
 \noindent
 \raggedright
 \footnotesize{#1}
 \par
-\normalsize}
+\normalsize
+\vspace{0.1em}}
 
 \newcommand{\fullName}{Adri\'an Garc\'ia Prado}
 \newcommand{\birthPlace}{Spain}
@@ -95,28 +97,17 @@
 % NAME AND CONTACT INFORMATION SECTION
 %-------------------------------------------------------------------------------
 
-% Your name
 \begin{cv}{\spacedallcaps{\fullName}}\vspace{1.5em} 
 
-% Personal information heading
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.3em} 
+\input{0.personal_info}
+\input{1.resume_objective}
+\input{2.work_experience}
 
-% Birthplace and date
-% \NewEntry{}{\textit{Born in \birthPlace,}}{\birthDate} 
-% Email address
-\PersonalEntry{email}{\href{mailto:\emailAddress}{\emailAddress}} 
+\newpage
+\input{3.education}
+\input{4.computer_skills}
+\input{5.other_information}
 
-% Personal LinkedinWeb
-\PersonalEntry{Linkedin}{\href{\LinkedinWeb}{\LinkedinWeb}} 
-
-% Phone number(s)
-\PersonalEntry{phone}{\phoneMobileLine} 
-
-\input{resume_goal}
-\input{work_experience}
-\input{education}
-\input{computer_skills}
-\input{other_information}
 \end{cv}
 
 \end{document}
