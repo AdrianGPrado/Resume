@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+% Version 1.0 (28/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% http://www.rpi.edu/dept/arc/training/latex/resumes/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+
+\usepackage{droidsans} % Default font is the New Century Schoolbook PostScript font 
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+\usepackage{hyperref} % Required for adding links and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=blue, linkcolor=blue} % Set link colors
+
+% Margins
+\topmargin=-1in % Moves the top of the document 1 inch above the default
+\textheight=8.5in % Total height of the text on the page before text goes on to the next page, this can be increased in a longer letter
+\oddsidemargin=-10pt % Position of the left margin, can be negative or positive if you want more or less room
+\textwidth=6.5in % Total width of the text, increase this if the left margin was decreased and vice-versa
+
+\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+
+\newcommand{\PersonalEntry}[3]{
+\noindent
+\small \textit{#1}\hspace{1.5em} #2 #3 \newline}
+
+% Personal information
+\newcommand{\fullName}{Adri\'an Garc\'ia Prado}
+\newcommand{\birthPlace}{Spain}
+\newcommand{\birthDate}{April 25th 1983}
+\newcommand{\emailAddress}{adrian@garciaprado.es}
+\newcommand{\LinkedinWeb}{https://www.linkedin.com/in/adriangarciaprado}
+\newcommand{\phoneMobileLine}{+1 (832) 863 1029}
+\newcommand{\personalAddress}{123 Broadway \\ City, State 12345}
+
+
+% Company definition
+\newcommand{\companyName}{Intel}
+\newcommand{\companyURL}{http://intel.com}
+\newcommand{\companyAddress}{123 Pleasant Lane \newline
+City, State 12345}
+\newcommand{\companyHHRRperson}{Mrs. Jane Smith}
+\newcommand{\companyHHRR}{\companyHHRRperson \newline
+Recruitment Officer}
+
+
+\newcommand{\jobId}{- 766648}
+\newcommand{\jobName}{HPC Distributed Runtime Engineer }
+\newcommand{\jobURL}{https://www-ssl.intel.com/content/www/us/en/jobs/job-search/js2.html?job=766648&src=ML-12700}
+\newcommand{\jobPosition}{\href{\jobURL}{\jobName\jobId}, at \href{\companyURL}{\companyName}}
+
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%-------------------------------------------------------------------------------
+
+\begin{letter}{\companyName \newline
+\companyAddress \newline
+\newline}
+% \companyHHRR}
+
+%-------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%-------------------------------------------------------------------------------
+
+% \begin{center}
+% \large\bf \fullName \\ % Your name
+%\vspace{20pt} \hrule height 1pt % If you would like a horizontal line separating the name from the address, uncomment the line to the left of this text
+% 4400 Memorial Dr. \\ Houston, TX 77007 \\ \phoneMobileLine % Your address and phone number
+% \end{center} 
+% \vfill
+
+\signature{\fullName} % Your name for the signature at the bottom
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%-------------------------------------------------------------------------------
+
+\opening{Dear \companyHHRRperson,} 
+ 
+With this letter I will like you to consider your application to the position: \jobPosition.
+
+% PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening (i.e. career development center, newspaper, employment service, personal contact).
+
+I am looking for the next step in my career, and the description of the position; \jobName fits my profile. I began building my background in scientific computing in college while working inside an European Space Agency students project. Since then I have work in my M.S. using CUDA language to develop Finite Element Methods. As a plus I have working experience as a full time employee in XFlow-CFD, and more recently at TOTAL E\&P Advance Computing team. Where I am developing scientific software. Concepts as scalability, coalesce memory access, code velocity, result accuracy or efficient design are present in every working day. The code I produce is not only suppose to run,
+it has to have all the qualities listed above.
+
+Apart from the mathematical code development mayor languages: C, C++ and Fortran, I have skills programming in Python, with which I like to sketch and test the final implementation, develop my own projects.
+
+% To complement my formation, during my studies period at the University of Zaragoza, I was involved in different projects. I was member of the student representatives, and I took part on the organization and development of several events in college. Those experiences have given me different skills in the areas of organization, negotiation, public speech, and the capability to work inside a team. I have also learnt several subjects   in   different   fields,   such   as   Marketing,   Human   Resources,   Business   Administration,   Project Management, Optimization or Scheduling.
+
+% PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services - above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life. 
+
+
+
+% PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials. 
+
+I have enclosed my resume for your review. I very much appreciate your time and consideration, and I should be grateful if you take my application into account.
+
+% \closing{Sincerely yours, \\
+\vspace{2em}
+Sincerely yours,
+
+\fullName
+
+
+% \encl{Curriculum vitae} % List your enclosed documents here, comment this out to get rid of the "encl:"
+\vspace{2em}
+\PersonalEntry{email}{\href{mailto:\emailAddress}{\emailAddress}}
+\PersonalEntry{Linkedin}{\href{\LinkedinWeb}{\LinkedinWeb}}
+\PersonalEntry{phone}{\phoneMobileLine}{}
+
+%-------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
