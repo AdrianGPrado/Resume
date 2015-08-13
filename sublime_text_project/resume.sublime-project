@@ -1,12 +1,19 @@
 {
 	"folders":
 	[
-		{ "path": "."
+		{ "path": "../."
 		, "name": "Resume"
 		, "file_exclude_patterns": 
 				[ "*.aux"
 				, "*.sublime-project"
 				, "*.gitignore" 
+				],
+		"folder_exclude_patterns": 
+				[ "sublime_text_project"
+				,	".svn"
+				, ".git"
+				, ".hg"
+				, "CVS"
 				]
 		}
 	]
